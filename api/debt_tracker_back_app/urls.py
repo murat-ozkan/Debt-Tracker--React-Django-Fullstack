@@ -5,4 +5,4 @@ router = DefaultRouter()
 
 router.register("tutorials", DebtView)
 
-urlpatterns = router
+urlpatterns = router.urls
