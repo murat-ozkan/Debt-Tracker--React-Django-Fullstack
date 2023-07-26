@@ -3,6 +3,6 @@ from .views import DebtView
 
 router = DefaultRouter()
 
-router.register("tutorials", DebtView)
+router.register("debtview", DebtView)
 
 urlpatterns = router.urls
