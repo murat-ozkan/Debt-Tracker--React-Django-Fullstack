@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const EditDept = ({ editingDebt }) => {
-  const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts";
+  // const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts";
+  const BASE_URL = "http://127.0.0.1:8000/debtview";
 
   const [toWhom, setToWhom] = useState("");
   const [howMuch, setHowMuch] = useState("");

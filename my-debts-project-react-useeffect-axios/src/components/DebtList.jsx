@@ -5,7 +5,8 @@ import EditDept from "./EditDebt";
 import { useState } from "react";
 
 const DebtList = ({ debts, getDebts }) => {
-  const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts";
+  // const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts";
+  const BASE_URL = "http://127.0.0.1:8000/debtview";
 
   const [editingDebt, setEditingDebt] = useState(null);
 

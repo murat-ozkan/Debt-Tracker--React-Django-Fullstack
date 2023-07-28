@@ -7,7 +7,8 @@ import "./Home.css";
 
 const Home = () => {
   const [debts, setDebts] = useState([]);
-  const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts/";
+  // const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts/";
+  const BASE_URL = "http://127.0.0.1:8000/debtview/";
 
   const getDebts = async () => {
     try {
@@ -27,7 +28,7 @@ const Home = () => {
     <>
       <AddDebt getDebts={getDebts} />
       <DebtList getDebts={getDebts} debts={debts} />
-      <EditDept debts={debts}/>
+      <EditDept debts={debts} />
     </>
   );
 };

@@ -5,7 +5,8 @@ const AddDebt = ({ getDebts }) => {
   const [toWhom, setToWhom] = useState("");
   const [howMuch, setHowMuch] = useState("");
   const [date, setDate] = useState("");
-  const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts/";
+  // const BASE_URL = "https://6429dbc900dfa3b5473ba802.mockapi.io/mydebts/";
+  const BASE_URL = "http://127.0.0.1:8000/debtview/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
