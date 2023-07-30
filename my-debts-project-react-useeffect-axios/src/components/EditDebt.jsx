@@ -34,7 +34,7 @@ const EditDept = ({ editingDebt }) => {
     event.preventDefault();
     try {
       if (editingDebt) {
-        await axios.put(`${BASE_URL}/${editingDebt.id}`, {
+        await axios.put(`${BASE_URL}/${editingDebt.id}/`, {
           toWhom,
           howMuch,
           date,
